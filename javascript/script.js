@@ -1,6 +1,5 @@
 
 
-let write 
 const quadratoEl = document.getElementById('quadrato');
 
 
@@ -8,8 +7,8 @@ const quadratoEl = document.getElementById('quadrato');
 for (let i = 1; i < 101; i++ ){
     console.log(i)
     write = i
-    boxClass='bg-blue'
     
+    let boxClass = 'bg-blue'
     if((i % 3 === 0) && (i % 5 === 0)){
         write = 'FizzBuzz'
         boxClass = 'bg-pink'
