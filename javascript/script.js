@@ -9,6 +9,7 @@ const quadratoEl = document.getElementById('quadrato');
 
 for (let i = 1; i < 101; i++ ){
     console.log(i)
+    
     if((i % 3 === 0) && (i % 5 === 0)){
         write = 'FizzBuzz'
         console.log(write)
@@ -22,4 +23,9 @@ for (let i = 1; i < 101; i++ ){
     }
 }
 
+const boxElementi = document.createElement ('div')
 
+
+boxElementi.classList = 'box ${'write'} ${'three'} ${'five'} d-flex justify-content-center align-items-center';
+boxElementi.innerHTML = i;
+quadratoEl.append(boxElementi);
