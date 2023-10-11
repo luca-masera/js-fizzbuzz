@@ -1,31 +1,36 @@
 
 
-let write = 'FizzBuzz';
-let three = 'Fizz';
-let five = 'Buzz';
+let write 
 const quadratoEl = document.getElementById('quadrato');
 
 
 
 for (let i = 1; i < 101; i++ ){
     console.log(i)
+    write = i
+    boxClass=''
     
     if((i % 3 === 0) && (i % 5 === 0)){
         write = 'FizzBuzz'
+        boxClass = 'bg-pink'
+        
         console.log(write)
     } else if (i % 3 === 0){
-        three = 'Fizz'
-        console.log(three)
+        write = 'Fizz'
+        console.log(write)
+        boxClass = 'bg-aqua'
     
     } else if (i % 5 === 0){
-        five = 'Buzz'
-        console.log(five)
+        write = 'Buzz'
+        console.log(write)
+        boxClass = 'bg-yellow'
     }
+    const boxElementi = document.createElement ('div');
+    boxElementi.className = `box ${boxClass} d-flex justify-content-center align-items-center`
+    boxElementi.innerHTML = write;
+    quadratoEl.append(boxElementi);
 }
 
-const boxElementi = document.createElement ('div')
 
 
-boxElementi.classList = 'box ${'write'} ${'three'} ${'five'} d-flex justify-content-center align-items-center';
-boxElementi.innerHTML = i;
-quadratoEl.append(boxElementi);
+
